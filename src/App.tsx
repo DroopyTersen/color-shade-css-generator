@@ -58,7 +58,7 @@ export default function App() {
   );
   return (
     <div className="App">
-      <h1>Color Shade Generator</h1>
+      <h1>CSS Theme Generator</h1>
       <h2>Theme Colors</h2>
       <div className="card-grid">
         {initialColors.map((color, index) => (

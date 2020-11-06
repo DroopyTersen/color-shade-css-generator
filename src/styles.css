@@ -7,6 +7,10 @@
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
 }
+h1 {
+  color: #068d9d;
+  text-align: center;
+}
 .swatch {
   transition: transform 0.15s linear;
   cursor: pointer;
