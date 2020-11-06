@@ -1,0 +1,16 @@
+{
+    "include": [
+        "./src/**/*"
+    ],
+    "compilerOptions": {
+        "strict": false,
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": false,
+        "esModuleInterop": true,
+        "lib": [
+            "dom",
+            "ESNext"
+        ],
+        "jsx": "react"
+    }
+}

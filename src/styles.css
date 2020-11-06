@@ -1,0 +1,55 @@
+.App {
+  padding: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+.swatch {
+  transition: transform 0.15s linear;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: monospace;
+}
+.swatch .value {
+  font-size: 16px;
+}
+.swatch .value {
+  display: none;
+  font-size: 12px;
+}
+.swatch .copied {
+  display: none;
+  font-size: 12px;
+}
+.swatch:hover .value {
+  display: block;
+}
+.swatch:hover .number {
+  display: none;
+}
+.swatch.copied .copied {
+  display: block;
+}
+.swatch.copied .number {
+  display: none;
+}
+.swatch:hover {
+  transform: scale(1.3, 1.3);
+}
+
+pre {
+  max-height: 600px;
+  font-size: 12px;
+  overflow-y: auto;
+}
+.css-output .code {
+  position: relative;
+}
+.css-output .code button {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
