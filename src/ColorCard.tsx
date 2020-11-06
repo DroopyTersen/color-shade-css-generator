@@ -62,6 +62,7 @@ export default function ({
       >
         {shades.map((shade, index) => (
           <ColorSwatch
+            key={shade.hexString()}
             number={getColorNumber(index)}
             value={shade.hexString()}
             size="60px"

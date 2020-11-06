@@ -47,12 +47,7 @@ export default function App() {
   }, [colors]);
   const onChange = useCallback(
     (newColor) => {
-      console.log("on cahnge", newColor);
       setColors((oldColors) => {
-        // let targetIndex =
-        let targetIndex = oldColors.findIndex((c) => c.id === newColor.id);
-        console.log("Change", targetIndex);
-
         return oldColors.map((color) => {
           if (color.id === newColor.id) return newColor;
           return color;
